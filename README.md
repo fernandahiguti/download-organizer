@@ -37,24 +37,45 @@ python downloadorganizer.py
 
 The script will continuously monitor the Downloads folder and organize new files as they are added.
 
-### Automatic Startup (Windows)
 
+### Windows Startup Folder Method
 To automatically run the script when your computer starts, you can use the Windows Startup folder method. Here's how to do it:
 
-1. Open File Explorer and navigate to:
+1. Press `Windows + R` to open the Run dialog box.
+2. Type `shell:startup` and click OK. This will open the Startup folder.
+3. Create a shortcut for the `downloadorganizer.py` script:
+   - Right-click on the `downloadorganizer.py` script.
+   - Select "Create shortcut."
+
+4. Move the created shortcut into the Startup folder:
+   - Press `Windows + R` to open the Run dialog box again.
+   - Type `shell:startup` and click OK. This will open the Startup folder.
+   - Move the shortcut you created for the `downloadorganizer.py` script into this folder.
+
+5. Now, right-click on the shortcut in the Startup folder and select "Properties."
+
+6. In the properties window, go to the "Shortcut" tab.
+
+7. In the "Target" field, make sure the path to the Python executable and your `downloadorganizer.py` script is correct. It should look something like this:
 
 ```
-C:\Users<your_username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+"C:\path\to\python.exe" "C:\path\to\downloadorganizer.py"
+
 ```
 
-2. Copy the `download_organizer.py` script into the Startup folder.
-3. Reboot your computer.
+Note: Replace `C:\path\to` with the actual path to your Python executable and script.
 
-The script will now run every time you start your computer and log in to your user account.
+8. In the same properties window, find the "Run" option and choose "Minimized" from the drop-down menu. This will run the script without popping-up the command prompt window.
+
+9. Click Apply then OK to save the changes.
+
+10. Reboot your computer.
+
+Now, the `downloadorganizer.py` script will be automatically executed every time you start your computer and log in to your user account. It will work silently in the background, organizing your files in the download folder according to their file extensions.
+
 
 ### Note
-
-This script should also work on macOS and Linux, but I haven't tested on those yet.
+Please note that this setup guide is specifically for Windows operating systems. For macOS and Linux, you may need to follow a different approach to automatically run the script on startup.
 
 If you encounter any issues or have specific feature requests, please feel free to open an issue on this repository.
 

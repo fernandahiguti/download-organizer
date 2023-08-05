@@ -137,21 +137,23 @@ def organize_files(download_folder, destination_folders):
 
 if __name__ == "__main__":
     download_folder = "C:/Users/ferna/Downloads"
+    destination_path = "C:/Users/ferna/Downloads"
+
     destination_folders = {
-        'Applications': "C:/Users/ferna/Downloads/Applications",
-        'Zip': "C:/Users/ferna/Downloads/Zip",
-        'PDFs': "C:/Users/ferna/Downloads/PDFs",
-        'WordDocs': "C:/Users/ferna/Downloads/WordDocs",
-        'SpreadSheets': "C:/Users/ferna/Downloads/SpreadSheets",
-        'PowerPoints': "C:/Users/ferna/Downloads/PowerPoints",
-        'Images': "C:/Users/ferna/Downloads/Images",
-        'Videos': "C:/Users/ferna/Downloads/Videos",
-        'Sounds': "C:/Users/ferna/Downloads/Sounds",
-        'Vectors': "C:/Users/ferna/Downloads/Vectors",
-        'Icons': "C:/Users/ferna/Downloads/Icons",
-        'Programming': "C:/Users/ferna/Downloads/Programming",
-        'Databases': "C:/Users/ferna/Downloads/Databases",
-        'Other': "C:/Users/ferna/Downloads/Other"
+    'Applications': os.path.join(destination_path, 'Applications'),
+    'Zip': os.path.join(destination_path, 'Zip'),
+    'PDFs': os.path.join(destination_path, 'PDFs'),
+    'WordDocs': os.path.join(destination_path, 'WordDocs'),
+    'SpreadSheets': os.path.join(destination_path, 'SpreadSheets'),
+    'PowerPoints': os.path.join(destination_path, 'PowerPoints'),
+    'Images': os.path.join(destination_path, 'Images'),
+    'Videos': os.path.join(destination_path, 'Videos'),
+    'Sounds': os.path.join(destination_path, 'Sounds'),
+    'Vectors': os.path.join(destination_path, 'Vectors'),
+    'Icons': os.path.join(destination_path, 'Icons'),
+    'Programming': os.path.join(destination_path, 'Programming'),
+    'Databases': os.path.join(destination_path, 'Databases'),
+    'Other': os.path.join(destination_path, 'Other')
     }
 
     organize_files(download_folder, destination_folders)

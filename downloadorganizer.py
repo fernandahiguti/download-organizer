@@ -136,8 +136,8 @@ def organize_files(download_folder, destination_folders):
         time.sleep(5)
 
 if __name__ == "__main__":
-    download_folder = "C:/Users/ferna/Downloads"
-    destination_path = "C:/Users/ferna/Downloads"
+    download_folder = "your/download/folder/path"
+    destination_path = "your/destination/folder/path"
 
     destination_folders = {
     'Applications': os.path.join(destination_path, 'Applications'),

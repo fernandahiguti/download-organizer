@@ -60,7 +60,6 @@ To automatically run the script when your computer starts, you can use the Windo
 
 ```
 "C:\path\to\python.exe" "C:\path\to\downloadorganizer.py"
-
 ```
 
 Note: Replace `C:\path\to` with the actual path to your Python executable and script.
